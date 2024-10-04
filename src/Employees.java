@@ -47,4 +47,7 @@ public class Employees {
     public void setPcUsers(List pcUsers) {
         this.pcUsers = pcUsers;
     }
+
+    public void getCompuetrs(Computers model) {
+    }
 }

@@ -18,17 +18,19 @@ public class Main {
         pcList.add(applePeach);
         System.out.println(pcList.get(0).getPrice() +
                 " "+ pcList.get(0).getModel());
-        System.out.print(pcList.size());
+        System.out.println(pcList.size());
 
         Employees linda = new Employees("Linda Mrtvá",
                 LocalDate.of(2000, 2,15));
         Employees marek = new Employees("Marek Mračivý",
                 LocalDate.of(1997, 12, 16));
 
-        linda.addComputer(lenovoAlphaOmega);
-        linda.addComputer(
-                new Computers(
-                        "Kancelář Yvona",
-                        new BigDecimal("28817.18")));
+        linda.getCompuetrs(lenovoAlphaOmega);
+        marek.getCompuetrs(applePeach);
+
+        List<Employees> pcUsers = new ArrayList<>();
+        pcUsers.add(linda);
+        pcUsers.add(marek);
+        System.out.println(pcUsers.getFirst().getName());
     }
 }
